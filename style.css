@@ -1,46 +1,74 @@
 *, body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .full-web {
-  margin-top: 0%;
+    margin-top: 0%;
 }
 
 .navbar-brand {
     font-size: 15px;
 }
+
 .full-content {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     background-color: rgb(200, 199, 199);
     width: 100%;
-    height: auto; 
+    height: auto;
 }
-.content-1{
-    background: url(./assets/Pondok.jpg) no-repeat center center ;
+
+.content-1 {
+    background: url(./assets/Pondok.jpg) no-repeat center center;
     color: white;
     width: 100%;
     height: 250px;
 }
-.content-1 h1 {
-   font-family: "Playwrite HU", cursive;
+
+.content-1 h1{
+    font-family: "Playwrite HU", cursive;
+    color: goldenrod;
 }
-.content-2{
-    background-color: yellow;
+
+.content-1 h2 {
+    color: goldenrod;
+}
+.content-1 p {
+    color: white;
+}
+
+.content-2 {
+    text-align: center;
+    background-color: turquoise;
     width: 100%;
     height: auto;
 }
 
 
 .content-2 img {
-    padding: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.content-3{
+
+.img-warp {
+    display: inline-flex;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 10px solid white;
+    border-radius: 3px;
+}
+
+.content-2 p {
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content-3 {
     display: block;
     align-content: end;
     background-color: whitesmoke;
@@ -55,12 +83,69 @@
 
 @media (min-width: 768px) {
     .content-1 {
+        display: flex;
+        justify-content: center;
+        align-items: end;
         height: 700px;
         background-size: cover;
+        overflow: visible;
     }
+
+    .welcome {
+        color: goldenrod;
+        display: inline;
+        position: absolute;
+        height: fit-content;
+        text-align: center;
+        font-size: 180px;
+        bottom: 200px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: bottom;
+        align-items: center;
+        color: white;
+        margin: 0%;
+        margin-bottom: 120px;
+        font-weight: 500;
+        text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    }
+
     .content-2 {
-        height: 200px;
+        height: 500px;
+        padding-top: 20px;
+        text-align: start;
+        background-color: turquoise;
     }
+
+    .content-2 p {
+        padding: 20px;
+        padding-right: 50px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .content-2 img {
+        padding: 0;
+        float: left;
+        width: auto;
+        height: 300px;
+        object-fit: fill;
+        border-radius: 10px;
+    }
+
+    .img-warp {
+        float: left;
+        display: inline-flex;
+        margin: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 20px solid white;
+        border-radius: 30px;
+    }
+
     .content-3 {
         height: 200px;
     }
